@@ -1,13 +1,3 @@
-// ===================================================================================
-//  Assignment: 2
-//  Milestone : 2
-// ===================================================================================
-//  Student Name  : Nasim Khodapanah
-//  Student ID    : 131929200
-//  Student Email : nkhodapanah@myseneca.ca
-//  Course Section: NGG
-// ===================================================================================
-
 
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
