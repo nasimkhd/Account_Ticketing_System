@@ -1,12 +1,3 @@
-// ===================================================================================
-//  Assignment: 2
-//  Milestone : 2
-// ===================================================================================
-//  Student Name  : Nasim Khodapanah
-//  Student ID    : 131929200
-//  Student Email : nkhodapanah@myseneca.ca
-//  Course Section: NGG
-// ===================================================================================
 
 #ifndef COMMON_HELPERS_H_
 #define COMMON_HELPERS_H_
