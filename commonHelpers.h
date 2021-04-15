@@ -1,13 +1,3 @@
-// ===================================================================================
-//  Assignment: 2
-//  Milestone : 4
-// ===================================================================================
-//  Student Name  : Nasim Khodapanah
-//  Student ID    : 131929200
-//  Student Email : nkhodapanah@myseneca.ca
-//  Course Section: NGG
-// ===================================================================================
-
 
 
 #ifndef COMMON_HELPERS_H_
@@ -16,6 +6,8 @@
 
 int    currentYear(void);
 void   clearStandardInputBuffer(void);
+
+//getData
 int    getInteger(void);
 int    getPositiveInteger(void);
 int    getIntFromRange(int lower_bound, int upper_bound);

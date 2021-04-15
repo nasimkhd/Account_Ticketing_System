@@ -1,12 +1,4 @@
-// ===================================================================================
-//  Assignment: 2
-//  Milestone : 4
-// ===================================================================================
-//  Student Name  : Nasim Khodapanah
-//  Student ID    : 131929200
-//  Student Email : nkhodapanah@myseneca.ca
-//  Course Section: NGG
-// ===================================================================================
+
 
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
@@ -98,7 +90,6 @@ void getDemographic(Demographic* info) {
 void updateAccount(Account* update) {
 	int account;
 	do {
-
 		printf("Account: %d - Update Options\n", update->accountNumber);
 		printf("----------------------------------------\n");
 		printf("1) Update account type (current value: %c)\n", update->accountType);
@@ -185,7 +176,7 @@ int loadAccounts(struct Account Account[], int ACCOUNT_SIZE) {
 				&Account[i].log.birthYear,
 				&Account[i].log.houseHoldIncome,
 				Account[i].log.country);
-			if (Account[i].accountNumber != 0)
+			if  (Account[i].accountNumber != 0)
 				i++;
 			else
 				flag = 0;
@@ -203,9 +194,9 @@ void accounts_arc(Account* removeaccount, int account_size) {
 	fp = fopen("accounts_arc.txt", "a");
 	if (fp != NULL) {
 		fprintf(fp, "%d~%c~%s~%s~%s~%d~%.2lf~%s\n",
-			removeaccount->accountNumber, removeaccount->accountType,
-			removeaccount->name.customerName, removeaccount->name.password,
-			removeaccount->name.userName, removeaccount->log.birthYear,
+			removeaccount->accountNumber,       removeaccount->accountType,
+			removeaccount->name.customerName,   removeaccount->name.password,
+			removeaccount->name.userName,       removeaccount->log.birthYear,
 			removeaccount->log.houseHoldIncome, removeaccount->log.country);
 		fclose(fp);
 		fp = NULL;
@@ -222,8 +213,8 @@ int recreateTheAccout(Account* account, int arrSize) {
 		for (i = 0; i < arrSize; i++) {
 			if (account[i].accountNumber != 0) {
 				fprintf(fp, "%d~%c~%s~%s~%s~%d~%.2lf~%s\n",
-					account[i].accountNumber, account[i].accountType, account[i].name.userName,
-					account[i].name.customerName, account[i].name.password, account[i].log.birthYear,
+					account[i].accountNumber,       account[i].accountType,   account[i].name.userName,
+					account[i].name.customerName,   account[i].name.password, account[i].log.birthYear,
 					account[i].log.houseHoldIncome, account[i].log.country);
 
 				numAccount++;
@@ -241,7 +232,7 @@ void ViewArchivedAccounts(Account account[]) {
 
 	int i = 0, flag = 1, buffer = 0;
 	char ch[1000];
-	FILE* fp = fopen("accounts_arc.txt", "r"); 
+	FILE* fp = fopen("accounts_arc.txt", "r");
 	if (fp != NULL) {
 		while (flag == 1)
 		{
@@ -258,5 +249,4 @@ void ViewArchivedAccounts(Account account[]) {
 		}
 	}
 	printf("There are %d account(s) currently archived.\n\n", i);
-	
 }

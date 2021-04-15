@@ -1,12 +1,4 @@
-// ===================================================================================
-//  Assignment: 2
-//  Milestone : 4
-// ===================================================================================
-//  Student Name  : Nasim Khodapanah
-//  Student ID    : 131929200
-//  Student Email : nkhodapanah@myseneca.ca
-//  Course Section: NGG
-// ===================================================================================
+
 
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
@@ -88,7 +80,7 @@ char getCharOption(const char* list) {
 	int i = 0;
 	do {
 		scanf("%c%c", &input, &option);
-		
+
 		if (option == '\n')
 		{
 			i = 0;

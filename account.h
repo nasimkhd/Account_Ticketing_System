@@ -1,12 +1,3 @@
-// ===================================================================================
-//  Assignment: 2
-//  Milestone : 4
-// ===================================================================================
-//  Student Name  : Nasim Khodapanah
-//  Student ID    : 131929200
-//  Student Email : nkhodapanah@myseneca.ca
-//  Course Section: NGG
-// ===================================================================================
 
 #ifndef ACCOUNT_H_
 #define ACCOUNT_H_
@@ -34,17 +25,19 @@ typedef struct Account {
 
 }Account;
 
-
+//GetData
 void   getAccount(Account* user);
 void   getUserLogin(UserLogin* login);
 void   getDemographic(Demographic* info);
 
+//UpdateData
 void   updateAccount(Account* update);
 void   updateUserLogin(UserLogin* user);
 void   updateDemographic(Demographic* demo);
 
 void   createPass(UserLogin* login);
 
+//FileData
 int   loadAccounts(Account  account[], int ACCOUNT_SIZE);
 void  accounts_arc(Account* removeaccount, int account_size);
 int   recreateTheAccout(Account* account, int arrSize);
