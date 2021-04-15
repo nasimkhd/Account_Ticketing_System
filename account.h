@@ -1,6 +1,17 @@
+// ===================================================================================
+//  Assignment: 2
+//  Milestone : 4
+// ===================================================================================
+//  Student Name  : Nasim Khodapanah
+//  Student ID    : 131929200
+//  Student Email : nkhodapanah@myseneca.ca
+//  Course Section: NGG
+// ===================================================================================
 
 #ifndef ACCOUNT_H_
 #define ACCOUNT_H_
+
+
 
 typedef struct Demographic {
 	int birthYear;
@@ -24,14 +35,20 @@ typedef struct Account {
 }Account;
 
 
-void getAccount(Account* user);
-void getUserLogin(UserLogin* login);
-void getDemographic(Demographic* info);
+void   getAccount(Account* user);
+void   getUserLogin(UserLogin* login);
+void   getDemographic(Demographic* info);
 
-void updateAccount(Account* update);
-void updateUserLogin(UserLogin* user);
-void updateDemographic(Demographic* demo);
+void   updateAccount(Account* update);
+void   updateUserLogin(UserLogin* user);
+void   updateDemographic(Demographic* demo);
 
-void createPass(UserLogin* login);
+void   createPass(UserLogin* login);
+
+int   loadAccounts(Account  account[], int ACCOUNT_SIZE);
+void  accounts_arc(Account* removeaccount, int account_size);
+int   recreateTheAccout(Account* account, int arrSize);
+void  ViewArchivedAccounts(Account account[]);
+
 
 #endif // !ACCOUNT_H_

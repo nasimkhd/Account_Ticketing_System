@@ -1,16 +1,20 @@
+// ===================================================================================
+//  Assignment: 2
+//  Milestone : 4
+// ===================================================================================
+//  Student Name  : Nasim Khodapanah
+//  Student ID    : 131929200
+//  Student Email : nkhodapanah@myseneca.ca
+//  Course Section: NGG
+// ===================================================================================
 
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 #include <time.h>
 #include <ctype.h>
 #include <string.h>
-#include "ticket.h"
 #include "commonHelpers.h"
-#include "account.h"
-#include "accountTicketingUI.h"
 
-#define MAX_RANGE 11
-#define MIN_RANGE -3
 
 int currentYear(void)
 {
@@ -115,7 +119,7 @@ int length(char* string) {
 	return i;
 }
 void getCString(char* cString, int minNumChar, int maxNum) {
-	char string[50];
+	char string[100];
 	int lengthChar;
 	scanf("%[^\n]", string);
 	clearStandardInputBuffer();

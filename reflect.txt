@@ -1,0 +1,46 @@
+// ===================================================================================
+//  Assignment: 2
+//  Milestone : 4
+// ===================================================================================
+//  Student Name  : Nasim Khodapanah
+//  Student ID    : 131929200
+//  Student Email : nkhodapanah@myseneca.ca
+//  Course Section: NGG
+// ===================================================================================
+
+
+1) 
+a) commonHelpers.h
+        int    length(char* line);
+b) account.h
+        void   createPass(UserLogin* login);
+        int   loadAccounts(Account  account[], int ACCOUNT_SIZE);
+        void  accounts_arc(Account* removeaccount, int account_size);
+        int   recreateTheAccout(Account* account, int arrSize);
+        void  ViewArchivedAccounts(Account account[]);
+c) ticket.h
+        int    findFreeTicket(Ticket data[], int max_size);
+        void   manageOneTicket(Ticket* ticket, const Account* loggedData );
+        void   modifyAccount(Ticket* ticket, const Account* loggedData);
+        int    findFreeMessage(Ticket* data, int max_size, int flag);
+        void   getMessage(Ticket* ticket, const Account* loggedData);
+        int    loadTickets(Ticket ticket[], int TICKET_SIZE);
+        int    recreateTheTicket(Ticket* ticket, int arrSize);
+        void   tickets_arc(Ticket* ticket, int arraySize);
+        void   ViewArchivedTicket(Ticket ticket[], int arrSize);
+d) accountTicketingUI.h
+
+        int    findAccountIndexByAcctNum(int accountNum, const struct Account account[], int maxSize, int prompt);
+        int    checkAccount(const struct Account* user, int size, int* index);
+        void   displayAllTickets_forAccounts(const AccountTicketingData* data, const struct Account* logged);
+        int    findTicketByNum(int ticketNo, Ticket* tickets, int sizeOfTicketArray);
+        void   listMyTicketHeader();
+        void   listMyTicket(Ticket* tickets);
+        void   listAllTickets(const Ticket* tickets, int status);
+        int    listItems(const struct Ticket* tickets);
+
+2) In this assignment I tried to create password and using Ctype functions which really enjoyable for me, another function that I enjoyed 
+a lot is loatAccounts and loadTickets which are how to load accounts and tickets, I was not familiar with files, and I thing this feature
+is the most valuable thing in coding, it is amazing how data is read from the file and how we can append data to the file. It is challenging
+to write these functions, but it is interesting how to open the file, use different features with proper data and close the file, then the 
+way the information is changed through the process of running is mamazing.
